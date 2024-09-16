@@ -1,0 +1,135 @@
+:root {
+    --main-bg-color: #0c1631;
+    --branco: #fff;
+  }
+
+header {
+    display: flex;
+    align-items: flex-start;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c1631;
+    max-width: 100%;
+    color: var(--branco);
+    background-color: #141941;
+    background-image: url(imagens/fundoquiz.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo img{
+    max-width: 6rem;
+    margin-left: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    border: 0.5rem solid var(--branco);
+    border-right: 3rem solid var(--branco);
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario img{
+    max-width: 5rem;
+}
+
+.hBotao {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: small;
+    display: inline-block;
+    align-content: center;
+    padding: 0.313rem 2rem;
+    color: var(--branco);
+    background-color: var(--main-bg-color);
+    text-decoration: none; 
+    border-radius: 5rem;
+    text-align: center;
+}
+
+body .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+    text-align: center;
+    padding: 130px 0;
+}
+
+.quiz-titulo {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    margin: 0;
+}
+
+hr {
+    margin-bottom: 0;
+    max-width: 25rem;
+}
+
+.quiz-subtitulo {
+    font-family: "Nokora", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.inicioquiz {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inicioquiz:hover {
+    background-color: #4c2c82;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        flex-direction: column;
+    }
+
+}
+
+
+.botaoQuiz button{
+    border: 1rem solid var(--branco);
+    border-radius: 1.5rem;
+}
+
+.botaoQuiz button:hover{
+    border: 1rem solid #4c2c82;
+    border-radius: 1.5rem;
+}

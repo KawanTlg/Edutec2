@@ -1,0 +1,140 @@
+:root {
+    --main-bg-color: #0c1631;
+    --branco: #fff;
+    --purple-bg-color: #4C2A7B;
+    --light-blue-color: #12A4F2;
+    --dark-purple-btn: #584298;
+    --dark-purple-hover: #46337a;
+    --light-purple-color: #824bcf;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 60px; 
+    background-color: var(--branco); 
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    background-image: url('imagens/fundoquiz.png'); 
+    background-size: cover; 
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    border: 0.5rem solid var(--branco);
+    border-right: 3rem solid var(--branco);
+    background-color: var(--branco);
+    justify-content: space-between;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario img {
+    max-width: 5rem;
+}
+
+.logo img{
+    max-width: 6rem;
+    margin-left: 2rem;
+}
+
+a img {
+    display: flex;
+    align-items: center;
+    max-width: 5rem;
+}
+
+.quiz-container {
+    text-align: center;
+    padding: 130px 0 20px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 700px; 
+    border-radius: 10px;
+    margin-top: 80px; 
+}
+
+.quiz-container h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.resultados {
+    display: flex;
+    justify-content: space-around;
+    background-color: #af65f3;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+
+.resultado-item {
+    background-color: #681380;
+    margin-left: 15px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 100px;
+    color: white;
+}
+
+.resultado-item .icon {
+    font-size: 40px;
+}
+
+.resultado-item .value {
+    font-size: 20px;
+    margin: 10px 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.resultado-item .label {
+    font-size: 18px;
+    color: #B7B7B7;
+}
+
+.retry-btn {
+    background-color: #681380;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.retry-btn:hover {
+    background-color: #681380;
+}
+
+

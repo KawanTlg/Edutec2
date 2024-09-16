@@ -1,0 +1,329 @@
+:root {
+    --main-bg-color: #0c1631;
+    --branco: #fff;
+  }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    background-color: var(--main-bg-color); 
+    color: var(--branco);
+}
+
+.tudo {
+    background-color: #ede6fa;
+}    
+
+.baixo p {
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+#conteudo h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--branco);
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+#conteudo p {
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--branco);
+    margin-top: -2.5rem;
+}
+
+#intro p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--main-bg-color);
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    border: 0.5rem solid var(--branco);
+    border-right: 3rem solid var(--branco);
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hBotao {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: small;
+    display: inline-block;
+    align-content: center;
+    padding: 0.313rem 2rem;
+    color: var(--branco);
+    background-color: var(--main-bg-color);
+    text-decoration: none; 
+    border-radius: 5rem;
+    text-align: center;
+}
+
+
+.logo {
+    margin-left: 2rem;
+}
+
+.logo img {
+    max-width: 6rem;
+}
+
+#tabela h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--branco);
+    font-size: 8rem;
+    margin-top: 12.5rem;
+    margin-left: -300px;
+}
+
+#tb {
+    margin-top: 8rem;
+}
+
+#sobre main {
+    margin-top: 3rem;
+    background-color: #ede6fa;
+
+}
+
+#criador h1 {   
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 800;
+    font-size: 3rem;
+    justify-content: center;
+    font-style: normal;
+    align-items: center;
+    color: #4c2c82;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    margin-top: 3.5rem;
+    margin-left: 60%;
+    margin-right: 2.5rem;
+    max-width: 28rem;
+    max-height: 28rem;
+    position: absolute;
+}
+
+hr {
+    max-width: 70rem;
+    margin-top: 2.5rem;
+    border: 0.5rem solid var(--branco);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Nokora", sans-serif;
+}
+
+.ctu {
+    background-color: #ede6fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(245, 244, 244, 0.1);
+    padding: 20px;
+    gap: 20px;
+    width: 45%;
+    margin-bottom: 3rem;
+}
+
+.cnt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.ctu h2 {
+    font-family: "Nokora", sans-serif;
+    text-align: justify;
+    font-size: 2rem;
+    color: var(--main-bg-color);
+    font-weight: bold; 
+}
+
+
+
+.ctu p {
+    text-align: justify;
+    font-size: 1rem;
+    color: black;
+}
+
+.ctu img {
+    width: 50px;
+    margin-left: 33rem;
+    margin-top: -50rem ;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 6rem;
+}
+
+.cabecalho h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.criadores {
+    background-color: #ede6fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.rdp p {
+    font-weight: bold;
+    text-shadow: 3px;
+    margin-top: -3rem;
+}
+
+.creador {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: var(--gray);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.creador p {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 100;
+    font-size: 16px;
+    color: var(--main-bg-color);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--white);
+    padding: 70px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.informacoes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.rodape img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .criadores {
+        flex-direction: column;
+    }
+
+    .rodape img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
