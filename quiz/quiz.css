@@ -15,9 +15,7 @@ body {
     font-family: "Black Han Sans", system-ui;
     max-width: 100%;
     background-color: var(--main-bg-color); 
-    background-image: url(./imagens/fundoquiz.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: var(--branco);
 }
 
 .container {
@@ -69,57 +67,75 @@ body {
     max-width: 6rem;
 }
 
-main h1 {
+.container_quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84.7svh;
+}
+
+.questao {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
     font-family: "Black Han Sans", system-ui;
-    font-weight: 200;
-    font-style: normal;
-    color: var(--branco);
-    font-size: 8rem;
-    margin: 0;
-    margin-top: 5rem;
+    font-size: 5rem;
 }
 
-main hr {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 20rem;
+.hr_quiz {
+    margin-bottom: 2rem;
 }
 
-main p {
-    display: flex;
-    justify-content: center;
-    color: var(--branco);
-    font-family: "Nokora", sans-serif;
-    font-weight: 400;
-}
-
-.comecar {
-    padding-top: 4rem;
-    display: flex;
-    justify-content: center;
-}
-
-main button{
+.container_quiz button {
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2rem;
-    display: inline-block;
-    height: 8rem;
-    width: 20rem;
-    border: 1rem solid var(--branco);
-    border-radius: 3rem;
-    text-decoration: none;
-    background-color: var(--branco);
-    margin: 0;
+    font-size: large;
+    font-weight: 900;
+    padding: 0.313rem 2rem;
+    text-decoration: none; 
+    text-align: center;
+    cursor: pointer;
 }
 
-main button:hover{
+.container_respostas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.container_respostas button {
+    border-radius: 5rem;
+    background-color: var(--branco);
+    border: 0.5rem solid var(--branco);
+    width: 30rem;
+    height: 5rem;
+}
+
+.proxima {
+    display: flex;
+    justify-content: center;
+}
+
+.proximab {
     color: var(--branco);
-    border: 1rem solid var(--roxo);
     background-color: var(--roxo);
+    border: 1.5rem solid var(--roxo);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.container_respostas button:hover {
+    color: var(--branco);
+    background-color: var(--roxo);
+    border: 0.5rem solid var(--roxo);
+}
+
+.proximab:hover {
+    color: var(--main-bg-color);
+    background-color: var(--branco);
+    border: 1.5rem solid var(--branco);
+}
+
+.hide {
+    display: none;
 }
