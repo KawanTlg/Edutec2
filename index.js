@@ -22,10 +22,10 @@ const con = mysql.createConnection({
 
 con.connect((err) => {
     if (err) {
-        console.log('Erro connecting to database...', err)
+        console.log('Erro  ao conectar ao banco de dados...', err)
         return
     }
-    console.log('Connection established!')
+    console.log('Conectado com sucesso!')
 })
 
 /** Cria uma função do tipo POST para a rota '/api/login' */
@@ -42,6 +42,10 @@ app.post('/api/login', (req, res) =>{
         res.status(401).send('Usuário ou Senha inválidos');
     });
 })
+
+app.post('/api/cadastro'), (req, res) => {
+    const
+}
 
 app.listen(5000, () =>{
     console.log('Servidor em execução!');

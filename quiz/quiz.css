@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #0c1631;
     --branco: #fff;
-    --roxo: #6449BE;
+    --roxo:#6449BE;
   }
 
 header {
@@ -12,6 +12,9 @@ header {
 body {
     margin: 0;
     padding: 0;
+    background-image: url(../imagens/fundoquiz.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: "Black Han Sans", system-ui;
     max-width: 100%;
     background-color: var(--main-bg-color); 
@@ -67,75 +70,44 @@ body {
     max-width: 6rem;
 }
 
-.container_quiz {
+.seta{
+    margin-top: 2rem;
+}
+
+.textos {
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 84.7svh;
+    flex-direction: row;
+    max-width: 70rem;
+    gap: 0;   
 }
 
-.questao {
+.textos span {
+    margin-top: 5rem;
+}
+
+.textos h1 {
+}
+
+.botoesquiz{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
-    font-family: "Black Han Sans", system-ui;
-    font-size: 5rem;
+    gap: 2rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hr_quiz {
-    margin-bottom: 2rem;
-}
-
-.container_quiz button {
+.botaoquiz {
     font-family: "Poppins", sans-serif;
-    font-size: large;
-    font-weight: 900;
-    padding: 0.313rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--branco);
+    border: 1rem solid var(--roxo);
+    background-color: var(--roxo);
     text-decoration: none; 
-    text-align: center;
-    cursor: pointer;
-}
-
-.container_respostas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.container_respostas button {
-    border-radius: 5rem;
-    background-color: var(--branco);
-    border: 0.5rem solid var(--branco);
-    width: 30rem;
-    height: 5rem;
-}
-
-.proxima {
-    display: flex;
-    justify-content: center;
-}
-
-.proximab {
-    color: var(--branco);
-    background-color: var(--roxo);
-    border: 1.5rem solid var(--roxo);
-    margin-bottom: 2rem;
     border-radius: 2rem;
-}
-
-.container_respostas button:hover {
-    color: var(--branco);
-    background-color: var(--roxo);
-    border: 0.5rem solid var(--roxo);
-}
-
-.proximab:hover {
-    color: var(--main-bg-color);
-    background-color: var(--branco);
-    border: 1.5rem solid var(--branco);
-}
-
-.hide {
-    display: none;
 }
