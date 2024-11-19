@@ -13,6 +13,13 @@ body {
     background-color: #d0d0d6;
 }
 
+
+
+ button{
+    margin-inline: none;
+}
+
+
 .login-container {
     background-color: #a3c9d9;
     width: 300px;
@@ -96,3 +103,4 @@ input[type="password"] {
     border-radius: 5rem;
     text-align: center;
 }
+

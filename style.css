@@ -41,7 +41,7 @@ body {
 }
 
 #conteudo h1 {
-    font-family: "Black Han Sans", system-ui;
+    font-family: "Lilita One", sans-serif;
     font-weight: 900;
     font-style: normal;
     color: var(--branco);
@@ -110,11 +110,11 @@ a {
 }
 
 #tabela h1 {
-    font-family: "Black Han Sans", system-ui;
+    font-family: "Lilita One", sans-serif;
     font-weight: 800;
     font-style: normal;
     color: var(--branco);
-    font-size: 8rem;
+    font-size: 9.5rem;
     margin-top: 12.5rem;
     margin-left: -300px;
 }

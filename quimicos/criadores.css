@@ -139,3 +139,10 @@ hr {
     text-align: justify;
     max-height: 50%;
 }
+
+@media (max-width: 1920px) {
+    .box {
+        width: 100%; /* Each box takes up full width */
+        padding-bottom: 100%; /* Maintain square shape */
+    }
+}
