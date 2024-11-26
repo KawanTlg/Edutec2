@@ -2,6 +2,7 @@
     --main-bg-color: #0c1631;
     --branco: #fff;
     --roxo:#6449BE;
+    --azulclaro:#0073e6;
   }
 
 header {
@@ -59,7 +60,6 @@ body {
     text-align: center;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
@@ -75,29 +75,31 @@ body {
 }
 
 .textos {
-    display: table-row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
     text-align: center;
-    max-width: 80rem;
+    width: 200vh;
 }
 
 .textos h1 {
-    display: flex;
     font-size: 3.5rem;
     font-weight: 600;
-    margin-top: 5rem;
-    
     margin-bottom: 0;
 }
 
 .textos span {
+    align-items: start;
+    margin-top: 5rem;
 }
 
 .botoesquiz{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    max-width: 50rem;
+    gap: 3rem;
+    max-width: 100rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -106,6 +108,7 @@ body {
 .botaoquiz {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    width: 40rem;
     font-size: 1.5rem;
     color: var(--branco);
     border: 1rem solid var(--roxo);
@@ -113,3 +116,41 @@ body {
     text-decoration: none; 
     border-radius: 2rem;
 }
+
+.proxima {
+    display: flex;
+    justify-content: center;
+}
+
+.proxima button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    color: var(--branco);
+    border: 2rem solid var(--azulclaro);
+    background-color: var(--azulclaro);
+    border-radius: 2rem;
+    width: 20rem;
+}
+
+.proxima a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.botaoquiz:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+    .textos {
+        margin-top: 2rem;
+    }
+    .botoesquiz {
+        max-width: 80rem;
+    }
+    .botaoquiz {
+        width: 10rem;
+    } 
+  }

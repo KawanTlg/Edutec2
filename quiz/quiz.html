@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+  <script src="quiz.js" defer></script>
   <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -41,34 +42,32 @@
     <a href="../login.html" class="hBotao">
       <h1>LOGIN</h1>
   </a>
-
-
       </nav>
     </div>
   </header>
 
   <main>
     <div class="textos">
-      <h1>Quem é conhecido como o "pai" da Tabela Periódica?</h1>
-      <span>Questão 6/10</span>
+      <div id="instrucoes"></div>
+      <div class="pergunta">
+        <h1>PERGUNTA</h1>
+      </div>
+      <div class="aviso">
+        <span>Questão <span id='numero'></span>/ <span id='total'></span> </span>
+      </div>
     </div>
     <div class="botoesquiz">
-        <button class="botaoquiz">
-            <p>A) Antoine Lavoisier</p>
+        <button id="a" value="1A" class="botaoquiz" onClick= 'verificarSeAcertou(this)'>
+            <p>A) ALTERNATIVA A</p>
         </button>
-        <button class="botaoquiz">
-            <p>B) Antoine Lavoisier</p>
+        <button id="b" value="1B" class="botaoquiz" onClick= 'verificarSeAcertou(this)'>
+            <p>B) ALTERNATIVA B</p>
         </button>
-        <button class="botaoquiz">
-            <p>C) Dmitri Mendeleev</p>
+        <button id="c" value="1C" class="botaoquiz" onClick= 'verificarSeAcertou(this)'>
+            <p>C) ALTERNATIVA C</p>
         </button>
-        <button class="botaoquiz">
-            <p>D) Ernest Rutherford</p>
+        <button id="d" value="1D" class="botaoquiz" onClick= 'verificarSeAcertou(this)'>
+            <p>D) ALTERNATIVA D</p>
         </button>
-    </div>
-    <div class="proxima">
-      <button><a href="">
-        <p>Próxima questão</p>
-      </a></button>
     </div>
   </main>

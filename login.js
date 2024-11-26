@@ -1,19 +1,36 @@
-(function () {
-	'use strict'
+const form = document.querySelector('form');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
 
-	// Fetch all the forms we want to apply custom Bootstrap validation styles to
-	var forms = document.querySelectorAll('.needs-validation')
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-	// Loop over them and prevent submission
-	Array.prototype.slice.call(forms)
-		.forEach(function (form) {
-			form.addEventListener('submit', function (event) {
-				if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-				}
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
 
-				form.classList.add('was-validated')
-			}, false)
-		})
-})()
+    if (!email || !password) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Por favor, insira um e-mail válido.');
+        return;
+    }
+
+    console.log('E-mail:', email);
+    console.log('Senha:', password);
+
+    alert(`Login realizado com sucesso, bem-vindo(a), ${email}!`);
+
+    try {
+        window.location.href = "./index.html";
+    } catch (error) {
+        console.error("Erro ao redirecionar:", error);
+    }
+});
+
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}

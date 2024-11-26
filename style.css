@@ -41,7 +41,7 @@ body {
 }
 
 #conteudo h1 {
-    font-family: "Lilita One", sans-serif;
+    font-family:"Lilita One", sans-serif;
     font-weight: 900;
     font-style: normal;
     color: var(--branco);
@@ -208,9 +208,9 @@ img {
 }
 
 .ctu img {
-    width: 50px;
-    margin-left: 33rem;
-    margin-top: -50rem ;
+    width: 75px;
+    margin-left: 45rem;
+    margin-top: -40rem ;
 }
 
 .header-content {
